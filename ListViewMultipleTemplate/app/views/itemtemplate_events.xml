@@ -1,0 +1,8 @@
+<Alloy>
+	<ItemTemplate name="item_template_events" id="item_template_evt" class="item_template_evt">
+		<View class="view1">
+			<ImageView bindId="image_view" id="img_view" class="img_view"/>
+			<Label bindId="desc_lbl" class="description_label" id="description_label"/>
+		</View>
+	</ItemTemplate>
+</Alloy>

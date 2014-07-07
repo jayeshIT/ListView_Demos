@@ -1,0 +1,60 @@
+".item_template":
+{
+	height : 90,
+    backgroundSelectedColor : "transparent",
+    selectionStyle : Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE, 
+  	backgroundColor : "white"
+},
+
+".view":
+{
+	left : 0,
+    top : 0,
+    bottom : 0,
+    width : 299,
+    backgroundImage : "/rowbg_friendList.png"
+},
+
+
+".img_view":
+{
+	borderRadius : 34,
+    left : 10,
+    height : 68,
+    width : 68,
+},
+".description_label":
+{
+	top : 7,
+    left : 95,
+    height : 30,
+    right : 20,
+    font : {
+        fontWeight : 'bold',
+        fontSize : 16
+    },
+    color : "black"
+},
+".email_label":
+{
+	top : 35,
+    left : 95,
+    right : 20,
+    font : {
+        fontWeight : 'bold',
+        fontSize : 16
+    },
+    color : "black"
+},
+".date_label":
+{
+	 top : 55,
+    height : 25,
+    width : 200,
+    textAlign : 'left',
+    left : 95,
+    font : {
+        fontSize : 14
+    },
+    color : "gray"
+}

@@ -1,0 +1,8 @@
+<Alloy>
+	<ListItem itemId="classified_item" id="classified_item_id"
+	img_view:defaultImage="/default/thumbnail-fotos.png"
+	description_label:text=""
+	email_label:text=""
+	date_label:text=""
+	/>
+</Alloy>

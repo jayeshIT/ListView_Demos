@@ -1,0 +1,16 @@
+".index": {
+	backgroundColor:"white"
+},
+".listView1":{
+	top : 0,
+	left : 0,
+	right : 0,
+	separatorColor :'red',
+	separatorStyle :1,
+	separatorInsets :
+	{
+		left : 0
+	},
+	backgroundColor :'transparent',
+	footerTitle : ''
+} 

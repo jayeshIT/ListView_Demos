@@ -1,0 +1,16 @@
+".home_win": {
+	backgroundColor: "gray"
+},
+".list_View_classified":
+{
+	backgroundColor: 'transparent',
+	separatorColor: 'teal',
+	separatorStyle: 1,
+	separatorInsets:
+	{
+		left: 0
+	},
+	top: 50,
+	left: 0,
+	borderColor: 'red'
+}

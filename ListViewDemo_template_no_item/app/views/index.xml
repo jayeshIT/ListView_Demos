@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container" id="index">
+			<ListView class="list_View_classified" id="list_View_classified" defaultItemTemplate="item_template">
+				<Templates>
+					<Require src="ListView_Templates/itemtemplate_classified" id="temp_late">
+					</Templates>
+				<ListSection class="list_section" id="list_section"></ListSection>
+			</ListView>
+	</Window>
+</Alloy>

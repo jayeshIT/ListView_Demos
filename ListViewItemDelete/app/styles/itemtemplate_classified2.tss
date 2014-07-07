@@ -1,0 +1,60 @@
+"#item_template2":
+{
+	height: 200,
+	width: Ti.UI.FILL,
+	selectedBackgroundColor: 'transparent',
+	borderColor: 'red'
+},
+".view1":
+{
+	top: 0,
+	left: 0,
+	right: 0,
+	layout: 'vertical',
+	backgroundColor: 'red'
+}
+"#img_view":
+{
+	top: 5,
+	left: 10,
+	height: 60,
+	width: 60,
+	borderRadius: 30
+},
+"#description_label":{
+	top: 5,
+	left: 0,
+	right: 0,
+	height: 25,
+	font:
+	{
+		fontSize: 15,
+		fontweight: 'bold'
+	},
+	color: 'black'
+},
+"#email_label":
+{
+	top: 5,
+	left: 0,
+	right: 0,
+	height: 25,
+	font:
+	{
+		fontSize: 15,
+		fontweight: 'bold'
+	},
+	color: 'black'
+},
+"#date_label":
+{
+	top: 5,
+	height: 25,
+	left: 0,
+	right: 0,
+	font:
+	{
+		fontSize: 15
+	},
+	color: 'black'
+}

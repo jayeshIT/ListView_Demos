@@ -1,0 +1,10 @@
+<Alloy>
+	<ItemTemplate name="item_template2" id="item_template2" class="item_template2">
+		<View class="view1">
+			<ImageView bindId="image_view" id="img_view" class="img_view"/>
+			<Label bindId="desc_lbl" class="description_label" id="description_label"/>
+			<Label bindId="email_lbl" class="email_label" id="email_label"/>
+			<Label bindId="date_lbl" class="date_label" id="date_label"/>
+		</View>
+	</ItemTemplate>
+</Alloy>

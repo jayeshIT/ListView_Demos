@@ -1,0 +1,16 @@
+".container": {
+	backgroundColor:"white"
+},
+".list_View_classified":
+{
+	backgroundColor : 'transparent',
+	separatorColor :'teal',
+	separatorStyle :1,
+	separatorInsets :
+	{
+		left : 0
+	},
+	top : 0,
+	left : 0,
+	borderColor : 'red'
+}

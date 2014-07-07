@@ -1,0 +1,77 @@
+Welcome to Alloy. Prepare to be amazed.
+========================================
+1>
+create Listview  Controller// index.js
+ex :<ListView class="classified_list_view" id="classified_list_view" defaultItemTemplate="item_template">
+
+give defaultItemTemplate to listView 
+ex :defaultItemTemplate="item_template">
+
+
+2>
+create Template  Controller// listview_itemtemplate.js
+ex: <ItemTemplate name="item_template" id="item_template" class="item_template">
+
+Here name item_template  assigned as defaultItemTemplate to ListView to change it 
+
+Now item_template has child elements with BindID 
+<ImageView bindId="img_view" id="img_view" class="img_view"/>
+<Label bindId="description_label" class="description_label"/>
+<Label bindId="email_label" class="email_label" id="email_label"/>
+<Label bindId="date_label" class="date_label" id="date_label"/>
+
+Provide TSS using class property you can user bindId as you like that is used with Listitem
+		
+	
+========================================jsut demo========================================
+<ListView class="classified_list_view_my" id="classified_list_view" defaultItemTemplate="item_template"> 
+<ItemTemplate name="classified_list_view_my" id="item_template" class="item_template">
+========================================jsut demo ends===================================
+
+3>create ListView Item //listitem_classified.js
+ex : <Alloy>
+	<ListItem itemId="classified_item" id="classified_item_id"
+	img_view:defaultImage="/default/thumbnail-fotos.png"
+	description_label:text=""
+	email_label:text=""
+	date_label:text=""
+	/>
+</Alloy>
+
+User bindID from item_template to assing values in ListItem and provide initial data 
+
+From actual WebService data 
+
+var sc_forsale = function(jsobj1) {
+		Titanium.API.info('===SALE :' + jsobj1);
+		var jsobj = JSON.parse(jsobj1);
+		if (jsobj.result != 0) {
+			for (var i = 0; i < jsobj.data.length; i++) {
+				var item_data = Alloy.createController('listview_item/listitem_classified', {
+					classifiedImages : jsobj.data[i].classifiedImages,
+					desc : jsobj.data[i].desc,
+					email : jsobj.data[i].email,
+					isSold : jsobj.data[i].isSold,
+					addedOn : jsobj.data[i].addedOn,
+					price : jsobj.data[i].price,
+					date_obj : jsobj.data[i].date_obj,
+				}).getView();
+				dataitems.push(item_data);
+			}
+			if (pageid1 == 0) {
+				$.listview_section.setItems(dataitems);
+			} else {
+				$.listview_section.appendItems(dataitems);
+			}
+		}
+	};
+
+
+so in listItem 
+
+$.classified_item_id.img_view.image = args.classifiedImages[0];
+$.classified_item_id.description_label.text = args.desc;
+$.classified_item_id.email_label.text = args.email;
+$.classified_item_id.date_label.text = args.date_obj;
+
+classified_item_id is the Id of listItem and description_label is BindID from item_template

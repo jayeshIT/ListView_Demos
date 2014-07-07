@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="index" class="index">
+	<ListView class="listView1" id="listView1"/>
+	</Window>
+</Alloy>

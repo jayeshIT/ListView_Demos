@@ -1,0 +1,50 @@
+".item_template":
+{
+	height : 100,
+	width : Ti.UI.FILL,
+	selectedBackgroundColor : 'transparent',
+	selectionStyle : Ti.UI.iPhone.ListViewCellSelectionStyle.NONE
+},
+"#img_view":
+{
+	left : 10,
+	height :60,
+	width : 60,
+	borderRadius : 30	
+},
+"#description_label":{
+	top : 5,
+	left : 80,
+	right : 0,
+	height : 25,
+	font :
+	{
+		fontSize : 15,
+		fontweight : 'bold'
+	},
+	color : 'black',
+},
+"#email_label":
+{
+	left : 80,
+	right : 0,
+	height: 25,
+	font :
+	{
+		fontSize : 15,
+		fontweight : 'bold'
+	},
+	color : 'black',
+},
+"#date_label":
+{
+	bottom : 5,
+	height : 25,
+	left : 80,
+	right : 0,
+	font :
+	{
+		fontSize : 15
+	},
+	color : 'black',
+}
